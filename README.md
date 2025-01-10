@@ -47,8 +47,8 @@ Make sure you have:
 
 ## How to Play
 
-- Use your mouse and keyboard to control your shots.
-- Chat with your friends and compete to see who’s the ultimate golfer.
+- Use your mouse and keyboard to control your shots. Use 1,2,3 to select clubs, and use the up and down arrow keys to adjust your shots vertical angle. Hold down spacebar to set the power of your shot, and release to take the shot.
+- Compete with your friends to see who’s the ultimate golfer.
 - Avoid obstacles, aim for the hole, and don’t forget to celebrate when you win! 🎉
 
 ## Contributing

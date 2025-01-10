@@ -61,6 +61,7 @@ export const GolfSimulationRapier = ({
   // BALL CONFIG! SUPER IMPORTANT
   if (ballBodyRef.current) {
     ballBodyRef.current.enableCcd(true);
+    powerRef.current = driverPower;
   }
 
   const setClub = (club: string) => {
