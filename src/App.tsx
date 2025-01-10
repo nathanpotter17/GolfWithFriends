@@ -34,7 +34,15 @@ function App() {
 
   useEffect(() => {
     const ws = new WebSocket("http://localhost:8080");
+    const audio = new Audio("/titlescreen.mp3");
     wsRef.current = ws;
+
+    // Game Audio
+    if (startGame) {
+      audio.volume = 0.5;
+      audio.play();
+      audio.loop = true;
+    }
 
     ws.onmessage = (event) => {
       const data = JSON.parse(event.data);
@@ -54,6 +62,7 @@ function App() {
 
     return () => {
       ws.close();
+      audio.pause();
     };
   }, []);
 
